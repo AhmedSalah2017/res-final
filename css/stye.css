@@ -187,3 +187,45 @@ footer {
     height: 180px;
   }
 }
+/* ====== تحسين عرض الصور في Shop Collection ====== */
+
+.shop_collection_abdo {
+  display: grid;
+  gap: 15px;
+}
+
+/* تحديد ارتفاع ثابت للصورة، وتنسيقها بشكل متساوي */
+.shop_collection_abdo figure {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.shop_collection_abdo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* تابلت: صورتين في الصف */
+@media (max-width: 768px) {
+  .shop_collection_abdo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop_collection_abdo figure {
+    height: 200px;
+  }
+}
+
+/* موبايل: صورة واحدة في الصف */
+@media (max-width: 480px) {
+  .shop_collection_abdo {
+    grid-template-columns: 1fr;
+  }
+  .shop_collection_abdo figure {
+    height: 180px;
+  }
+}
+
