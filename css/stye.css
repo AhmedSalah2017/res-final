@@ -26,10 +26,9 @@
   margin: 0 !important;
 }
 
-.display_none_abdo{
-  display: none ;
+.display_none_abdo {
+  display: none;
 }
-
 
 /* start header */
 .navbar {
@@ -39,19 +38,19 @@
   width: 80px;
   height: 80px;
 }
-.show{
+.show {
   position: absolute;
   left: 0;
   right: 0;
   top: 80px;
-  ul,form{
+  ul,
+  form {
     padding-left: 8px;
   }
 }
-.collapsing{
+.collapsing {
   transition: none;
 }
-
 /* end header */
 
 /* start home */
@@ -65,33 +64,30 @@
   background-attachment: fixed;
   color: var(--main-text-color);
 }
-
 /* end home */
 
 /* start register */
-.register_abdo{
+.register_abdo {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99999;
 }
-form p{
+form p {
   font-size: 13px;
 }
- 
 /* end register */
 
 /* start login */
-.login_abdo{
+.login_abdo {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99999;
 }
- 
 /* end login */
 
-/* start Made-To-Order  */
+/* start Made-To-Order */
 .Made-To-Order-abdo {
   height: 40vh;
   width: 100%;
@@ -101,37 +97,43 @@ form p{
   background-position: center center;
   color: var(--main-text-color);
 }
-/* end Made-To-Order  */
+/* end Made-To-Order */
 
 /* start feature products */
 .feature_products_abdo .box_abdo {
-  span{
+  span {
     font-size: 14px;
   }
 }
- 
 /* end feature products */
 
-/* start about website do  */
-.about_website_abdo{
+/* start about website do */
+.about_website_abdo {
   /* background-color: #D9D9D9; */
-  p{
+  p {
     font-size: 12px;
   }
 }
-/* end about website do  */
+/* end about website do */
 
 /* start shop collection */
-.shop_collection_abdo{
-    figure{
-    height: 250px;
-  }
-  span{
-    bottom: 6%;
-    left: 50%;
-    font-size: 12px;
-    transform: translateX(-50%);
-  }
+.shop_collection_abdo figure {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.shop_collection_abdo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.shop_collection_abdo span {
+  bottom: 6%;
+  left: 50%;
+  font-size: 12px;
+  transform: translateX(-50%);
 }
 /* end shop collection */
 
@@ -139,117 +141,49 @@ form p{
 footer {
   background-color: var(--main-color);
   height: 40vh;
-  .row{
+  .row {
     height: 100% !important;
   }
-  input{
+  input {
     border: none;
     background-color: transparent;
   }
-  form{
+  form {
     border-bottom: 2px solid black;
     width: fit-content;
   }
-  li,p{
+  li,
+  p {
     font-size: 14px;
   }
-  li a:hover{
+  li a:hover {
     transform: scale(1.012);
   }
-  .social_icons_abdo a:hover{
+  .social_icons_abdo a:hover {
     transform: scale(1.012);
   }
 }
 /* end footer */
 
-
-/* ================= Responsive Fixes ================= */
-
-/* For tablets and smaller devices */
-@media (max-width: 992px) {
-  .home_abdo {
-    background-attachment: scroll; /* منع مشاكل الباكجراوند في الموبايل */
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .Made-To-Order-abdo {
-    height: auto;
-    padding: 40px 20px;
-    background-size: cover;
-  }
-
-  footer {
-    height: auto;
-    padding: 20px 0;
-    text-align: center;
-  }
-}
-
-/* For mobile devices */
-@media (max-width: 576px) {
-  .navbar {
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .img-logo-abdo {
-    width: 60px;
-    height: 60px;
-  }
-
-  .shop_collection_abdo figure {
-    height: auto;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .shop_collection_abdo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .shop_collection_abdo span {
-    font-size: 14px;
-    bottom: 10px;
-  }
-
-  .feature_products_abdo .box_abdo span {
-    font-size: 12px;
-  }
-
-  .about_website_abdo p {
-    font-size: 14px;
-  }
-
-  footer li,
-  footer p {
-    font-size: 12px;
-  }
-}
-/* تحسين عرض الصور في shop collection */
+/* 📱 Responsive design */
+/* Tablet */
 @media (max-width: 768px) {
-  .shop_collection_abdo {
+  .shop_collection_abdo .row {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* صورتين في الصف */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-
   .shop_collection_abdo figure {
-    height: auto;
-  }
-
-  .shop_collection_abdo img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 6px;
+    height: 200px;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
-  .shop_collection_abdo {
-    grid-template-columns: 1fr; /* صورة واحدة في الصف */
+  .shop_collection_abdo .row {
+    grid-template-columns: 1fr;
+  }
+  .shop_collection_abdo figure {
+    height: 180px;
   }
 }
