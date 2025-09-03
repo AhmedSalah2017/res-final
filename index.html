@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head class="">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailor</title>
@@ -11,47 +11,47 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/stye.css" />
+    <!-- إضافة ملف CSS للتجاوب -->
+    <link rel="stylesheet" href="css/style-responsive.css" />
   </head>
 
   <body>
     <!-- start Navbar -->
-    <header
-      class="navbar navbar-expand-lg bg-main_color_abdo pb-md-0 pb-1 fixed-top z-3"
-    >
+    <header class="navbar navbar-expand-lg bg-main_color_abdo pb-md-0 pb-1 fixed-top">
       <div class="container">
         <div class="img-logo-abdo navbar-brand logo">
           <img
             src="imgs/logo.png"
-            class="logo_abdo w-100 nav-link text-white fw-bold z-2"
+            class="logo_abdo w-100 nav-link text-white fw-bold"
             alt="logo"
           />
         </div>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <nav class="collapse navbar-collapse  bg-main_color_abdo" id="navbarSupportedContent">
+        <nav class="collapse navbar-collapse bg-main_color_abdo" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-lg-3 my-1">
               <a class="nav-link fw-medium" aria-current="page" href="#"
                 >PRODUCTS</a
               >
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-lg-3 my-1">
               <a class="nav-link fw-medium" aria-current="page" href="#"
                 >SHOP</a
               >
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-lg-3 my-1">
               <a class="nav-link fw-medium" aria-current="page" href="#"
                 >WEDDINGS</a
               >
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-lg-3 my-1">
               <a class="nav-link fw-medium" aria-current="page" href="#"
                 >SERVICES</a
               >
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-lg-3 my-1">
               <a class="nav-link fw-medium" aria-current="page" href="#"
                 >CONTACT</a
               >
@@ -59,7 +59,7 @@
           </ul>
           <form class="d-flex">
             <a href="#" class="text-black mx-2 register_icon_abdo"
-              ><i class="fa-solid fa-user "></i
+              ><i class="fa-solid fa-user"></i
             ></a>
             <a href="#" class="text-black mx-2"
               ><i class="fa-solid fa-cart-shopping"></i
@@ -78,10 +78,8 @@
 
     <!-- start register page -->
     <section class="register_abdo display_none_abdo">
-      <div
-        class="register_box_abdo w-100 h-100 d-flex justify-content-center align-items-center flex-column"
-      >
-        <form class="w-50  bg-light rounded-5 p-4">
+      <div class="register_box_abdo w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+        <form class="bg-light rounded-5 p-4">
           <div class="alert alert-danger p-1 d-none reg_message_abdo" role="alert"></div>
           <div class="box_abdo d-flex flex-column">
             <label for="name">Name</label>
@@ -110,7 +108,6 @@
               id="Repassword"
             />
             <p class="text-danger my-0 ms-2 repassword_warnig_reg_abdo"></p>
-
           </div>
           <input class="my-3 btn btn-outline-primary w-100 register_form_btn_abdo" type="submit" value="Register" />
         </form>
@@ -118,16 +115,13 @@
     </section>
     <!-- end register page -->
 
-
     <!-- start login page -->
     <section class="login_abdo display_none_abdo">
-      <div
-        class="login_box_abdo w-100 h-100 d-flex justify-content-center align-items-center flex-column"
-      >
-        <form class="w-50 h-50 bg-light rounded-5 p-4 position-relative">
+      <div class="login_box_abdo w-100 h-100 d-flex justify-content-center align-items-center flex-column">
+        <form class="bg-light rounded-5 p-4 position-relative">
           <div class="alert alert-danger p-1 d-none log_message_abdo" role="alert"></div>
            
-          <div class=" w-75 position-absolute start-50 top-50 translate-middle">
+          <div class="position-absolute top-50 start-50 translate-middle w-100 px-3">
             <div class="box_abdo d-flex flex-column">
               <label for="email_login">Email</label>
               <input required class="my-1 form-control" type="email" placeholder="Enter your email" id="email_login" />
@@ -150,10 +144,8 @@
 
     <!-- start home page -->
     <section class="home_abdo position-relative">
-      <div
-        class="wrapper-text-abdo position-absolute top-50 start-50 translate-middle"
-      >
-        <span class="fs-4">LOOK YOUR BEST</span>
+      <div class="wrapper-text-abdo position-absolute top-50 start-50 translate-middle text-center w-75">
+        <span class="fs-4 d-block">LOOK YOUR BEST</span>
         <h1 class="my-4">FOR YOUR SPECIAL DAY</h1>
         <div class="btn btn-brown-abdo">New Arrivals</div>
       </div>
@@ -166,26 +158,13 @@
         <div class="container my-5">
           <header class="text-center">
             <h1 class="my-4 h2">FEATURED PRODUCTS</h1>
-            <span class="border rounded-3 px-3 py-1">View All</span>
+            <span class="border rounded-3 px-3 py-1 d-inline-block">View All</span>
           </header>
 
           <main>
             <div class="swiper mySwiper my-4">
               <div class="swiper-wrapper">
                 <!-- data will coming from api  -->
-                <!-- start shop collection -->
-<section class="shop_collection_abdo">
-  <div class="container">
-    <h1 class="h4 text-center my-5">SHOP COLLECTION</h1>
-    <div class="content">
-      <div class="row my-5">
-        <!-- data will coming from api  -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- end shop collection -->
-
               </div>
 
               <div class="swiper-button-next"></div>
@@ -199,10 +178,8 @@
       <!-- start Made-To-Order -->
       <section class="ordered-list-abdo">
         <div class="container">
-          <div class="Made-To-Order-abdo position-relative">
-            <div
-              class="wrapper-text-abdo text-center position-absolute top-50 start-50 translate-middle"
-            >
+          <div class="Made-To-Order-abdo position-relative rounded-3 overflow-hidden">
+            <div class="wrapper-text-abdo text-center position-absolute top-50 start-50 translate-middle w-100 px-3">
               <h2 class="h3 my-3">Made-To-Order</h2>
               <button class="btn btn-brown-abdo">LEARN MORE</button>
             </div>
@@ -218,6 +195,34 @@
           <div class="content">
             <div class="row my-5">
               <!-- data will coming from api  -->
+               <div class="col-6 col-md-4 col-lg-3 mb-4">
+  <figure>
+    <img src="imgs/item1.jpg" alt="Item 1" />
+    <span class="d-block text-center mt-2">Item 1</span>
+  </figure>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 mb-4">
+  <figure>
+    <img src="imgs/item2.jpg" alt="Item 2" />
+    <span class="d-block text-center mt-2">Item 2</span>
+  </figure>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 mb-4">
+  <figure>
+    <img src="imgs/item3.jpg" alt="Item 3" />
+    <span class="d-block text-center mt-2">Item 3</span>
+  </figure>
+</div>
+
+<div class="col-6 col-md-4 col-lg-3 mb-4">
+  <figure>
+    <img src="imgs/item4.jpg" alt="Item 4" />
+    <span class="d-block text-center mt-2">Item 4</span>
+  </figure>
+</div>
+
             </div>
           </div>
         </div>
@@ -225,13 +230,13 @@
       <!-- end shop collection -->
 
       <!-- start about website do -->
-      <section class="about_website_abdo mt-5 py-5">
+      <section class="about_website_abdo">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12 mb-4 mb-md-0">
               <div class="box_abdo text-center">
                 <figure>
-                  <img src="imgs/Sewing machine.png" alt="img_box_about" />
+                  <img src="imgs/Sewing machine.png" alt="img_box_about" class="img-fluid" />
                 </figure>
                 <div class="details">
                   <h2 class="h5">Quality</h2>
@@ -243,10 +248,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12 mb-4 mb-md-0">
               <div class="box_abdo text-center">
                 <figure>
-                  <img src="imgs/Tailor.png" alt="img_box_about" />
+                  <img src="imgs/Tailor.png" alt="img_box_about" class="img-fluid" />
                 </figure>
                 <div class="details">
                   <h2 class="h5">Customisability</h2>
@@ -259,10 +264,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="box_abdo text-center">
                 <figure>
-                  <img src="imgs/Sewing.png" alt="img_box_about" />
+                  <img src="imgs/Sewing.png" alt="img_box_about" class="img-fluid" />
                 </figure>
                 <div class="details">
                   <h2 class="h5">Convenience</h2>
@@ -282,19 +287,19 @@
 
     <!-- start footer -->
     <footer>
-      <div class="container h-100">
-        <div class="row justify-content-center align-items-center">
-          <div class="col box_abdo">
-            <span>SIGN UP AND SAVE</span>
-            <p>
+      <div class="container h-100 py-4">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-lg-2 col-md-4 col-12 box_abdo mb-4 mb-md-0">
+            <span class="fw-bold d-block">SIGN UP AND SAVE</span>
+            <p class="mt-2">
               Subscribe to get special offers, free giveaways, and
               once-in-a-lifetime deals
             </p>
-            <form class="my-3">
+            <form class="my-3 mx-auto mx-md-0">
               <input type="email" placeholder="Enter Your Email" />
               <span><i class="fa-solid fa-mail-bulk"></i></span>
             </form>
-            <div class="social_icons_abdo d-flex gap-2">
+            <div class="social_icons_abdo d-flex gap-2 justify-content-center justify-content-md-start">
               <a href="#" class="nav-link"
                 ><i class="fa-xl fa-brands fa-instagram"></i
               ></a>
@@ -306,9 +311,9 @@
               ></a>
             </div>
           </div>
-          <div class="col box_abdo">
-            <h2 class="fs-6">LOCATION</h2>
-            <ul class="list-unstyled">
+          <div class="col-lg-2 col-md-4 col-6 box_abdo mb-4 mb-md-0">
+            <h2 class="fs-6 fw-bold">LOCATION</h2>
+            <ul class="list-unstyled mt-3">
               <li><a href="#" class="nav-link">007,James bond street,</a></li>
               <li><a href="#" class="nav-link">London,</a></li>
               <li><a href="#" class="nav-link">England.</a></li>
@@ -316,9 +321,9 @@
               <li><a href="#" class="nav-link">Sun:Closed</a></li>
             </ul>
           </div>
-          <div class="col box_abdo">
-            <h2 class="fs-6">About</h2>
-            <ul class="list-unstyled">
+          <div class="col-lg-2 col-md-4 col-6 box_abdo mb-4 mb-md-0">
+            <h2 class="fs-6 fw-bold">About</h2>
+            <ul class="list-unstyled mt-3">
               <li><a href="#" class="nav-link">FAQ,</a></li>
               <li><a href="#" class="nav-link">Services</a></li>
               <li><a href="#" class="nav-link">Contact</a></li>
@@ -326,17 +331,17 @@
               <li><a href="#" class="nav-link">Exchange</a></li>
             </ul>
           </div>
-          <div class="col box_abdo">
-            <h2 class="fs-6">Tailoring</h2>
-            <ul class="list-unstyled">
+          <div class="col-lg-2 col-md-4 col-6 box_abdo mb-4 mb-md-0">
+            <h2 class="fs-6 fw-bold">Tailoring</h2>
+            <ul class="list-unstyled mt-3">
               <li><a href="#" class="nav-link">Made-to-Measure</a></li>
               <li><a href="#" class="nav-link">Weddings</a></li>
               <li><a href="#" class="nav-link">Made-to-Order</a></li>
             </ul>
           </div>
-          <div class="col box_abdo">
-            <h2 class="fs-6">Orders</h2>
-            <ul class="list-unstyled">
+          <div class="col-lg-2 col-md-4 col-6 box_abdo">
+            <h2 class="fs-6 fw-bold">Orders</h2>
+            <ul class="list-unstyled mt-3">
               <li><a href="#" class="nav-link">Returns</a></li>
               <li><a href="#" class="nav-link">Terms and Conditions</a></li>
               <li><a href="#" class="nav-link">Privacy and policy</a></li>
@@ -354,4 +359,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
