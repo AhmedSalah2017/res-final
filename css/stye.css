@@ -228,3 +228,28 @@ footer {
     font-size: 12px;
   }
 }
+/* تحسين عرض الصور في shop collection */
+@media (max-width: 768px) {
+  .shop_collection_abdo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* صورتين في الصف */
+    gap: 15px;
+  }
+
+  .shop_collection_abdo figure {
+    height: auto;
+  }
+
+  .shop_collection_abdo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop_collection_abdo {
+    grid-template-columns: 1fr; /* صورة واحدة في الصف */
+  }
+}
