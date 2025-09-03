@@ -81,7 +81,7 @@ form p{
  
 /* end register */
 
-/* start register */
+/* start login */
 .login_abdo{
   position: fixed;
   inset: 0;
@@ -89,7 +89,7 @@ form p{
   z-index: 99999;
 }
  
-/* end register */
+/* end login */
 
 /* start Made-To-Order  */
 .Made-To-Order-abdo {
@@ -105,7 +105,6 @@ form p{
 
 /* start feature products */
 .feature_products_abdo .box_abdo {
- 
   span{
     font-size: 14px;
   }
@@ -119,7 +118,6 @@ form p{
   p{
     font-size: 12px;
   }
-
 }
 /* end about website do  */
 
@@ -127,7 +125,6 @@ form p{
 .shop_collection_abdo{
     figure{
     height: 250px;
-    
   }
   span{
     bottom: 6%;
@@ -161,56 +158,73 @@ footer {
   }
   .social_icons_abdo a:hover{
     transform: scale(1.012);
-
   }
 }
 /* end footer */
 
-/* =================== Responsive Design =================== */
 
-/* Small devices (phones) */
-@media (max-width: 576px) {
-  body {
-    padding: 0 10px;
+/* ================= Responsive Fixes ================= */
+
+/* For tablets and smaller devices */
+@media (max-width: 992px) {
+  .home_abdo {
+    background-attachment: scroll; /* منع مشاكل الباكجراوند في الموبايل */
+    text-align: center;
+    padding: 40px 20px;
   }
 
-  header, nav, .container, footer {
-    width: 100%;
-    padding: 10px;
+  .Made-To-Order-abdo {
+    height: auto;
+    padding: 40px 20px;
+    background-size: cover;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px 0;
     text-align: center;
   }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .row, .grid {
-    display: block;
-  }
 }
 
-/* Medium devices (tablets) */
-@media (min-width: 577px) and (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  img {
-    max-width: 100%;
+/* For mobile devices */
+@media (max-width: 576px) {
+  .navbar {
     height: auto;
+    padding: 10px 0;
   }
-}
 
-/* Large devices (desktops) */
-@media (min-width: 769px) {
-  .container {
-    max-width: 1140px;
-    margin: auto;
+  .img-logo-abdo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .shop_collection_abdo figure {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .shop_collection_abdo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .shop_collection_abdo span {
+    font-size: 14px;
+    bottom: 10px;
+  }
+
+  .feature_products_abdo .box_abdo span {
+    font-size: 12px;
+  }
+
+  .about_website_abdo p {
+    font-size: 14px;
+  }
+
+  footer li,
+  footer p {
+    font-size: 12px;
   }
 }
